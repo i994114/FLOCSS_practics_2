@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '///scss/foundation/_reset.scss';
 html, body {
   width: 100%;
   color: #777;
