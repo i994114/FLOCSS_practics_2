@@ -166,6 +166,61 @@ table {
 .c-news__title {
   font-size: 14px; }
 
+.c-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: .3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .c-btn:hover {
+    transform: translateY(-3px);
+    transition: .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  .c-btn--corp {
+    color: #fff;
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .c-btn--l {
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 18px; }
+
+.c-form {
+  width: 100%; }
+  .c-form__m {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 414px) {
+      .c-form__m {
+        width: 100%; } }
+
+.c-input {
+  display: block;
+  margin-bottom: 10px;
+  border: 3px solid #f6f5f4;
+  border-radius: 4px;
+  outline: none;
+  height: 60px;
+  font-size: 18px;
+  color: #777;
+  box-sizing: border-box; }
+  .c-input--l {
+    padding: 5px 10px;
+    width: 100%; }
+  .c-input:focus {
+    border: 3px solid #e3a8b1; }
+  .c-input__textarea {
+    height: 200px; }
+
+::placeholder {
+  color: #ccc; }
+
 .p-header {
   color: #777; }
   .p-header--title {
@@ -271,6 +326,9 @@ br {
 .u-bgColorMain {
   background: #f8f7fc;
   box-shadow: 0px 0px 8px 2px #ddd inset; }
+
+.mb-xxl {
+  margin-bottom: 30px; }
 
 .container {
   width: 980px;
@@ -407,61 +465,6 @@ br {
         width: 100%;
         margin: 0 auto 15px auto; } }
 
-.form {
-  width: 100%; }
-  .form-m {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto; }
-    @media screen and (max-width: 414px) {
-      .form-m {
-        width: 100%; } }
-
-.input {
-  display: block;
-  margin-bottom: 10px;
-  border: 3px solid #f6f5f4;
-  border-radius: 4px;
-  outline: none;
-  height: 60px;
-  font-size: 18px;
-  color: #777;
-  box-sizing: border-box; }
-  .input-l {
-    padding: 5px 10px;
-    width: 100%; }
-  .input:focus {
-    border: 3px solid #e3a8b1; }
-  .input-textarea {
-    height: 200px; }
-
-::placeholder {
-  color: #ccc; }
-
-.btn {
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  box-sizing: border-box;
-  transition: .3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-  .btn:hover {
-    transform: translateY(-3px);
-    transition: .3s;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-  .btn-corp {
-    color: #fff;
-    background: #ee9ca7;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffdde1, #ee9ca7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  .btn-l {
-    padding: 15px 30px;
-    width: 100%;
-    font-size: 18px; }
-
 .footer {
   background: #555;
   color: #fff;
@@ -476,9 +479,6 @@ br {
 .bgColor-main {
   background: #f8f7fc;
   box-shadow: 0px 0px 8px 2px #ddd inset; }
-
-.mb-xxl {
-  margin-bottom: 30px; }
 
 .ft-corp {
   font-weight: bold;
