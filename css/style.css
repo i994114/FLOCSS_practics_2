@@ -264,6 +264,9 @@ img {
       @media screen and (max-width: 768px) {
         .c-panel__group--flex .c-panel:nth-of-type(3) {
           margin-right: 0; } }
+      @media screen and (max-width: 414px) {
+        .c-panel__group--flex .c-panel:nth-of-type(3) {
+          margin-right: 15px; } }
     .c-panel__group .c-panel {
       float: left;
       margin-right: 15px;

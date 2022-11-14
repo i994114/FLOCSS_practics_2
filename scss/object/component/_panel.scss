@@ -39,11 +39,18 @@
       flex-wrap: wrap;
       justify-content: space-between;
       .c-panel {
+        //ネガティブマージン解消用
         @include ipad() {
           &:nth-of-type(3) {
             margin-right: 0;
           }
-        } 
+        }
+        //スマホ表示の場合は再度右マージン復活
+        @include mq() {
+          &:nth-of-type(3) {
+            margin-right: $space_l;
+          }
+        }
       }
     }
     .c-panel {
