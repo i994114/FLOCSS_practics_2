@@ -92,6 +92,17 @@ table {
       padding-right: 15px;
       padding-left: 15px; } }
 
+.l-hero {
+  background-image: url("../images/hero.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .p-header {
   color: #777; }
   .p-header--title {
@@ -167,29 +178,20 @@ table {
       .p-header__menu--trigger.active span:nth-of-type(3) {
         transform: translateY(-15px) rotate(45deg); }
 
-.hero {
-  background-image: url("../images/hero.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .hero-title {
-    font-size: 60px;
-    font-family: "Amatic SC", cursive;
-    color: #fff;
-    text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
-    @media screen and (max-width: 414px) {
-      .hero-title {
-        text-align: center; } }
-  .hero br {
-    display: none; }
-    @media screen and (max-width: 414px) {
-      .hero br {
-        display: block; } }
+.p-hero--title {
+  font-size: 60px;
+  font-family: "Amatic SC", cursive;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 414px) {
+    .p-hero--title {
+      text-align: center; } }
+
+br {
+  display: none; }
+  @media screen and (max-width: 414px) {
+    br {
+      display: block; } }
 
 .container {
   width: 980px;

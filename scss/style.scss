@@ -112,41 +112,16 @@ $breakpoints: (
 @import '../scss/foundation/_base.scss';
 @import '../scss/foundation/_reset.scss';
 //layout
-@import '../scss/layout/_header';
+@import '../scss/layout/_header.scss';
+@import '../scss/layout/_hero.scss';
 //object
-@import '../scss/object/project/_header';
+@import '../scss/object/project/_header.scss';
+@import '../scss/object/project/_hero.scss';
+
+@import '../scss/object/utility/_br.scss';
 
 
 
-// ==================================
-// hero
-// ==================================
-.hero {
-  background-image: url('../images/hero.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &-title {
-    font-size: 60px;
-    font-family: $font-family_corp;
-    color: #fff;
-    text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
-    @include mq() {
-      text-align: center;
-    }
-  }
-  br {
-    display: none;
-    @include mq() {
-      display: block;
-    }
-  }
-}
 
 // ==================================
 // container
