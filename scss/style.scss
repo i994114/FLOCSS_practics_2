@@ -118,6 +118,8 @@ $breakpoints: (
 @import '../scss/layout/_header.scss';
 @import '../scss/layout/_hero.scss';
 @import '../scss/layout/_container.scss';
+@import '../scss/layout/_footer.scss';
+
 //----------
 //object
 //----------
@@ -333,20 +335,6 @@ $breakpoints: (
   }
 }
 
-// ==================================
-// footer
-// ==================================
-.footer {
-  background: #555;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  @include mq() {
-    font-size: $font-size_s;
-  }
-}
 
 // ==================================
 // Utility
