@@ -265,6 +265,13 @@ br {
     br {
       display: block; } }
 
+・.u-backColor span {
+  background: #f8f7fc; }
+
+.u-bgColorMain {
+  background: #f8f7fc;
+  box-shadow: 0px 0px 8px 2px #ddd inset; }
+
 .container {
   width: 980px;
   margin-left: auto;
