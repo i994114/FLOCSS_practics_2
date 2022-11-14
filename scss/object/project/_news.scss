@@ -1,0 +1,9 @@
+.p-news {
+  width: 70%;
+  height: 60px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: $main-color; // TODO:リファクタ必要（複数使いまわしている箇所があるため、変数にまとめる）ok
+  padding: $space_l $space_xl;
+}

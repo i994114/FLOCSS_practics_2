@@ -124,10 +124,12 @@ $breakpoints: (
 //component
 @import '../scss/object/component/_container.scss';
 @import '../scss/object/component/_containerTitle.scss';
+@import '../scss/object/component/_news.scss';
 
 //project
 @import '../scss/object/project/_header.scss';
 @import '../scss/object/project/_hero.scss';
+@import '../scss/object/project/_news.scss';
 
 //utility
 @import '../scss/object/utility/_br.scss';
@@ -208,31 +210,7 @@ $breakpoints: (
   }
 }
 
-// ==================================
-// news
-// ==================================
-.news {
-  width: 70%;
-  height: 60px;
-  overflow-y: scroll;
-  margin: 0 auto;
-  border-radius: 5px;
-  background: $main-color; // TODO:リファクタ必要（複数使いまわしている箇所があるため、変数にまとめる）ok
-  padding: $space_l $space_xl;
-  &-item {
-    margin-bottom: $space_s;
-  }
-  &-date {
-    color: $font-color_date;
-    font-weight: bold;
-    font-family: $font-family_corp;
-    -webkit-font-smoothing: initial;
-    margin-right: $space_m;
-  }
-  &-title {
-    font-size: $font-size_m;
-  }
-}
+
 
 // ==================================
 // panel

@@ -1,0 +1,15 @@
+.c-news {
+  &__item {
+    margin-bottom: $space_s;
+  }
+  &__date {
+    color: $font-color_date;
+    font-weight: bold;
+    font-family: $font-family_corp;
+    -webkit-font-smoothing: initial;
+    margin-right: $space_m;
+  }
+  &__title {
+    font-size: $font-size_m;
+  }
+}
