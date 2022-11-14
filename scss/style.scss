@@ -145,6 +145,135 @@ $breakpoints: (
 // ==================================
 // panel
 // ==================================
+.c-panel {
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  transition: .5s;
+
+  &__group {
+    margin-right: -$space_l;
+    @include ipad() {
+      //course側のネガティブマージンを消す処理
+      margin-right: 0;
+    }
+    @include mq() {
+      margin-right: -$space_l;
+    }
+    &--float {
+      overflow: hidden;
+      .c-panel {
+        @include mq() {
+          &:nth-of-type(2) {
+            margin-right: 0;
+          }
+          &:nth-of-type(6) {
+            margin-right: 0;
+          }
+        }
+        @include ipad() {
+          &:nth-of-type(4) {
+            margin-right: 0;
+          }
+          &:nth-of-type(8) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    &-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .c-panel {
+        @include ipad() {
+          &:nth-of-type(3) {
+            margin-right: 0;
+          }
+        } 
+      }
+    }
+    .c-panel {
+      float: left;
+      margin-right: $space_l;
+      @include ipad() {
+        margin-right: 20px;
+      }
+      margin-bottom: $space_l;
+      box-sizing: border-box;
+    }
+  }
+  &--hover {
+    display: inline-block;
+    transition: .5s;
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+      transition: .5s;
+    }
+  }
+  &__staff {
+    width: calc(25% - #{$space_l});
+    @include mq() {
+      width: calc(50% - #{$space_l});
+    }
+  }
+
+}
+
+
+/*
+.panel {
+
+  &-border {
+    border-radius: 5px;
+    border: 5px solid #f6f5f4;
+  }
+  &-head, &-foot {
+    padding: $space_m;
+  }
+  &-head {
+    text-align: center;
+    color: $color_corp;
+  }
+  &-active {
+    border: 5px solid $color_corp;
+  }
+  //「おすすめ」の丸枠
+  &-badge {
+    background: #e37b89;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 15px 0;
+    box-sizing: border-box;
+    font-size: $font-size_s;
+    transform: rotate(15deg);
+    @include mq() {
+      top: -20px;
+      right: -13px;
+    }
+  }
+  &-cource {
+    width: calc(33.3% - #{$space_l});
+    @include mq() {
+      width: 100%;
+      margin: 0 auto $space_l auto;
+    }
+  }
+}
+*/
+
+
+
+
+//↓↓↓↓↓↓↓↓もとのやつ
 .panel {
   box-sizing: border-box;
   background: #fff;
