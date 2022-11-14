@@ -116,6 +116,17 @@ table {
     .l-container {
       width: 100%; } }
 
+.l-footer {
+  background: #555;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; }
+  @media screen and (max-width: 414px) {
+    .l-footer {
+      font-size: 12px; } }
+
 .c-container--fluid {
   width: 100%; }
 
@@ -330,53 +341,6 @@ br {
 .mb-xxl {
   margin-bottom: 30px; }
 
-.container {
-  width: 980px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 80px;
-  padding-bottom: 120px; }
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 768px; } }
-  @media screen and (max-width: 414px) {
-    .container {
-      width: 100%; } }
-  .container-fluid {
-    width: 100%; }
-  .container-title {
-    font-family: "Amatic SC", cursive;
-    text-align: center;
-    font-size: 38px;
-    margin-bottom: 40px; }
-    @media screen and (max-width: 414px) {
-      .container-title {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto; } }
-  @media screen and (max-width: 414px) {
-    .container-body {
-      padding-left: 15px;
-      padding-right: 15px; } }
-  .container-ornament .container-title-decoration {
-    display: inline-block;
-    background: #fff;
-    padding: 0 10px;
-    position: relative;
-    z-index: 1; }
-  .container-ornament .container-title:before, .container-ornament .container-title:after {
-    border-top: 1px solid #2e1f1a;
-    content: "";
-    display: block;
-    position: relative;
-    z-index: 0; }
-  .container-ornament .container-title:before {
-    top: 28px; }
-  .container-ornament .container-title:after {
-    top: -28px; }
-  .container-ornament .container-title-lightGray span {
-    background: #f8f7fc; }
-
 .panel {
   box-sizing: border-box;
   background: #fff;
@@ -464,17 +428,6 @@ br {
       .panel-cource {
         width: 100%;
         margin: 0 auto 15px auto; } }
-
-.footer {
-  background: #555;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px; }
-  @media screen and (max-width: 414px) {
-    .footer {
-      font-size: 12px; } }
 
 .bgColor-main {
   background: #f8f7fc;
